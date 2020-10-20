@@ -531,17 +531,17 @@ body {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-list__label:not(:last-child) {
-  margin-right: 8px;
-}
-
-.filter-list__label:not(:last-child):hover, .filter-list__label:not(:last-child):focus {
+.filter-list__label:hover, .filter-list__label:focus {
   background-color: #2196f3;
   color: #ffffff;
   border: 0px;
   cursor: pointer;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter-list__label:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter-list__category:checked + .filter-list__label {
